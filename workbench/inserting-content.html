@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $("document").ready(function(){
+            $("#append").click(function(){
+                $("p:first").append("I just appended some copy!");
+            })
+            $("#prepend").click(function(){
+                $("p:first").prepend("<h1>P R E P E N D E D</h1>");
+            })
+        })
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <a href="#" id="append">append</a>
+    <a href="#" id="prepend">prepend</a>
+
+    <p>!HALELUYA!</p>
+</body>
+</html>

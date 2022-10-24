@@ -25,30 +25,43 @@
 * can get argument to replace html content.
     * $("#textBox").html(variable) => variable now textBox's html content.
 
-## function 'show' and 'hide'
+## function 'show' and 'hide':
 
 * show sets the display property of attached target to block and hide sets it to none. 
 
 
-## function 'toggleClass'
+## function 'toggleClass':
 * toggles the given class as parameter.
 
-## function 'fadeIn'
+## function 'fadeIn':
 
 * used to fade and it takes arguments as _miliseconds_.
 
-## function 'slidDown/slideUp/slideToggle'
+## function 'slidDown/slideUp/slideToggle':
 
 * Used to slide elements and they take arguments as miliseconds, also can take sliding effect as string like "linear".
 * SlideToggle make element disappeared or appeared with slide effect.
 
-## function 'toggle'
+## function 'toggle':
 
 * it is a simply toggle function and it takes 2 arguments. First, duration. Second is toggle effect/animation like "swing"
 
-## function 'animate'
+## function 'animate':
 
 * It allows to add animation to attached element. It takes two arguments: First style which is written like {width} and second duration, just like before.
+
+## function 'wrap':
+* It allows to wrap the selected element with the given parameter. close tags is no needed.
+    * Instance use: $("#container p").wrap("<div class='colorBox'>"); => wraps each p element in div with container id.
+
+## function 'empty':
+* purges inside of the selected element.
+
+## function 'replaceAll(element)'
+* element is replaced to the selected element.
+    * Example: `$("<div>Replaced</div>").replaceAll("#container.")` => element whose id is container's content replaced with the `$("<div>Replaced</div>")`
+## function 'replaceWith(element)'
+* use is the reverse of replaceAll but effect is same.
 ---------------------------------------------------------------------------------------------------------------------------
 
 ## SELECTORS 
@@ -67,8 +80,8 @@
 
 
 ## ADVANCED SELECTORS
-
-* $("div > p") => all paragraph where the parent element is div
+* $("div p") => selects all p elements in div.
+* $("div > p") => all paragraph ___where the parent element___ is div
 * $("#box + p") => selects the first p element that placed immediately after #box.
 
 
@@ -127,10 +140,36 @@
 * there are kind of animations already given.
 
 
+----------------------------------------------------------------------------------------------------------------
+## CREATING CONTENT
+
+* .text() allows writing text to selected element.
+* .html() allows to add html elements to selected element.
 
 
 
+## INSERTING CONTENT
 
+* Append() => adds given input beginning of the selected element. 
+* Prepend() => simply, the reverse.
+
+## MODIFYING CONTENT
+
+* see wrap function which allows to wrap with given elements.
+* see empty function to purge what it has.
+* see replaceWith and replaceAll to change existing element's content.
+
+
+## MODIFYING CSS
+
+* to add class to selected element, use addClass('className')
+
+* to remove class from selected element, use removeClass('className')
+
+* to make class toggle for selected element, use toggleClass('className')
+
+* Also you can increase or decrease fonts-size (and props similar to font-size) by doing this:
+    * (selected).css("font-size(or similar)", "+=1") => this allows to increase font-size
 
 
 

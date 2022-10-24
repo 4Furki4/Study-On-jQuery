@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $("document").ready(function(){
+            $("#add-class").click(function(){
+                $("p:first").addClass('color');
+            })
+            $("#remove-class").click(function(){
+                $("p:first").removeClass('color');
+            })
+            $("#toggle-class").click(function(){
+                $("p:first").toggleClass('color');
+            })
+            $("#increase-class").click(function(){
+                $("p:first").css("font-size", "+=1");
+            })
+            $("#decrease-class").click(function(){
+                $("p:first").css("font-size", "-=1");
+            })
+        })
+    </script>
+    <style>
+        .color{
+            color:rgba(0, 0, 255, 0.329);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="add-class">Add Class</a>
+    <a href="#" id="remove-class">Remove Class</a>
+    <a href="#" id="toggle-class">Toggle Class</a>
+    <a href="#" id="increase-class">Increase Class</a>
+    <a href="#" id="decrease-class">Decrease Class</a>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore iure sequi quod provident facilis ducimus distinctio nisi asperiores maxime.</p>
+        <p>Asperiores architecto eaque ut necessitatibus expedita non repudiandae blanditiis assumenda, nesciunt mollitia minima voluptatem ea, distinctio animi iusto et libero!</p>
+        <p>Esse eveniet error perferendis quae hic tenetur, voluptate laborum excepturi sint in cumque officia modi adipisci ut atque earum odio?</p>
+    </div>
+</body>
+</html>

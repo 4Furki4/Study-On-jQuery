@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $("document").ready(function(){
+            $("<div>Replaced content</div>").replaceAll("#container");
+        })
+    </script>
+    <style>
+        .colorBox {
+            color:rgba(0, 0, 255, 0.329);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore iure sequi quod provident facilis ducimus distinctio nisi asperiores maxime.</p>
+        <p>Asperiores architecto eaque ut necessitatibus expedita non repudiandae blanditiis assumenda, nesciunt mollitia minima voluptatem ea, distinctio animi iusto et libero!</p>
+        <p>Esse eveniet error perferendis quae hic tenetur, voluptate laborum excepturi sint in cumque officia modi adipisci ut atque earum odio?</p>
+    </div>
+</body>
+</html>
