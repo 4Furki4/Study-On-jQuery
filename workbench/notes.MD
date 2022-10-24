@@ -51,13 +51,25 @@
 * It allows to add animation to attached element. It takes two arguments: First style which is written like {width} and second duration, just like before.
 ---------------------------------------------------------------------------------------------------------------------------
 
-## SELECTORS AND FILTERS
+## SELECTORS 
 
 * $("element")
 * $("#id")
 * $(".class")
-* $("element:first") => this targets the first element. last is the reverse.
 * $("<.p>") => this created p element to a variable(wo dot by p).
+
+
+
+## FILTERS
+
+* $("element:first") => this targets the first element. last is the reverse.
+* $("container p:even") => p element in the container is filtered.
+
+
+## ADVANCED SELECTORS
+
+* $("div > p") => all paragraph where the parent element is div
+* $("#box + p") => selects the first p element that placed immediately after #box.
 
 -------------------------
 
@@ -106,9 +118,6 @@
 * to add animation given element, use animate function.
 * there are kind of animations already given.
 
-
-
-## Selectors 
 
 
 
