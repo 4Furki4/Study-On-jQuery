@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#grow").click(function(){
+                $("#textBox").animate({marginLeft:"200px", width: "500px"}, 3200);
+            });
+            $("#move").click(function(){
+                $("#textBox").animate({marginLeft:"200px"}, 500)
+            });
+            $("#random").click(function(){
+                $("#textBox").animate({fontSize:"32px", width:"400px", height:"400px", marginTop:"10px", marginLeft:"300px"}, 2000);
+            });
+        })
+    </script>
+    
+    <style>
+        #textBox {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        margin-left: 10px;
+    }
+    </style>
+</head>
+<body>
+     <a href="#" id="grow">Grow</a> || <a href="#" id="move">Move it up!</a> || <a href="#" id="bigger">Make it bigger mamma</a> || <a href="#" id="random">Randooooooom!</a>
+    <div id="textBox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, est.
+        Quis numquam laborum blanditiis rerum repudiandae maiores natus ab illo!
+        Accusamus unde officia at similique est pariatur ad iure
+    </div>
+
+</body>
+</html>

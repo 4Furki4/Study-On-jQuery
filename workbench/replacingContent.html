@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            
+            var newText = $("<p>");
+
+            newText.append("<h1>just replaced something</h1>");
+            $("#textBox").html(newText);
+
+            console.log(newText.html())
+
+        });
+    </script>
+
+</head>
+<body>
+    <div id="textBox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, velit.
+    Officia esse beatae iusto illo ipsa saepe libero, fugiat quasi?
+    Corrupti voluptas eum accusamus voluptatem magni at adipisci nisi libero!
+    Mollitia corporis eum, incidunt illum assumenda eius sunt veritatis. Fugiat!
+    </div>
+</body>
+</html>

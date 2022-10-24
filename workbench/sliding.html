@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#slide-up").on("click", function() {
+                $("#textBox").slideUp("fast", "linear")
+            });
+            $("#slide-down").on("click", function() {
+                $("#textBox").slideDown("fast", "linear")
+            });
+
+            $("#toggleSlide").on("click", function() {
+                $("#textBox").slideToggle("fast", function() {
+                    alert("Done.")
+                })
+            })
+        })
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <a href="#" id="slide-up">Slide Up</a> | <a href="#" id="slide-down">Slide down</a> | <a href="#" id="toggleSlide">Slide Toggle</a>
+    <div id="textBox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, est.
+        Quis numquam laborum blanditiis rerum repudiandae maiores natus ab illo!
+        Accusamus unde officia at similique est pariatur ad iure alias.
+        Quae qui deleniti illo reiciendis voluptas inventore perspiciatis mollitia placeat?
+        Sed porro numquam totam veniam eos sit quaerat consequatur quidem!
+    </div>
+
+</body>
+</html>
