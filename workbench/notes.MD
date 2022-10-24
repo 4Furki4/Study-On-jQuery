@@ -71,6 +71,14 @@
 * $("div > p") => all paragraph where the parent element is div
 * $("#box + p") => selects the first p element that placed immediately after #box.
 
+
+## ADVANCED FILTERS
+
+* 	$("p:first-child") Selects every <p> element that is the first child of its parent
+*   $("p:first-of-type") Selects every <.p> element that is the first __<.p>__ element of its parent
+*   $("p:contains('searchedValue')") selects each p elements contains searchedValue and .css() method implement style each of them independently.
+*   $("p:nth-child(num)") Selects the 3rd of the children of each parents
+
 -------------------------
 
 ## Handling Events
