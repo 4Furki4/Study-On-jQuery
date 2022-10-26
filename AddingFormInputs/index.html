@@ -10,34 +10,43 @@
     <title>Document</title>
 </head>
 <body class="bg-secondary">
-    <div class="container">
+    <div id="container" class="container">
         <form action="" method="post">
+                                                    <!-- First word's area starts -->
             <div id="first-part" class="row mt-5">
-                <div class="col-3">
-                    <input type="text" class="form-control mt-1" id="word0">
+                <div class="row">
+                    <div class="col-3" id="first-part-word">
+                        <input type="text" class="form-control mt-1" id="word0">
+                    </div>
+                    <div class="col-4" id="first-part-def">
+                        <input type="text" class="form-control mt-1" id="word0-def0">
+                    </div>
+                    <div class="col-3" id="first-part-type">
+                        <input type="text" class="form-control mt-1" id="word0-type0">
+                    </div>
+                    <input id="first-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
                 </div>
-                <div class="col-4" id="first-part-def">
-                    <input type="text" class="form-control mt-1" id="word0-def0">
-                </div>
-                <div class="col-3" id="first-part-type">
-                    <input type="text" class="form-control mt-1" id="word0-type0">
-                </div>
-                <input id="first-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
+                                                    <!-- First word's area ends -->
+                                                    <!-- Second word's area starts -->
             <div id="second-part" class="row mt-5">
-                <div class="col-3">
-                    <input type="text" class="form-control mt-1" id="word1">
+                <div class="row">
+                    <div class="col-3">
+                        <input type="text" class="form-control mt-1" id="word1">
+                    </div>
+                    <div class="col-4" id="second-part-def">
+                        <input type="text" class="form-control mt-1" id="word1-def0">
+                    </div>
+                    <div class="col-3" id="second-part-type">
+                        <input type="text" class="form-control mt-1" id="word1-type0">
+                    </div>
+                    <input id="second-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
                 </div>
-                <div class="col-4" id="second-part-def">
-                    <input type="text" class="form-control mt-1" id="word1-def0">
-                </div>
-                <div class="col-3" id="second-part-type">
-                    <input type="text" class="form-control mt-1" id="word1-type0">
-                </div>
-                <input id="second-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
+                                                    <!-- Second word's area ends -->
+                                                    <!-- Third word's area starts -->
             <div id="third-part" class="row mt-5">
-                <div class="col-3">
+                <div class="row"><div class="col-3">
                     <input type="text" class="form-control mt-1" id="word2">
                 </div>
                 <div class="col-4" id="third-part-def">
@@ -46,20 +55,25 @@
                 <div class="col-3" id="third-part-type">
                     <input type="text" class="form-control mt-1" id="word2-type0">
                 </div>
-                <input id="third-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+                <input id="third-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;"></div>
             </div>
+                                                    <!-- Third word's area ends -->
+                                                    <!-- Fourth word's area starts -->
             <div id="fourth-part" class="row mt-5">
-                <div class="col-3">
-                    <input type="text" class="form-control mt-1" id="word3">
+                <div class="row">
+                    <div class="col-3">
+                        <input type="text" class="form-control mt-1" id="word3">
+                    </div>
+                    <div class="col-4" id="fourth-part-def">
+                        <input type="text" class="form-control mt-1" id="word3-def0">
+                    </div>
+                    <div class="col-3" id="fourth-part-type">
+                        <input type="text" class="form-control mt-1" id="word3-type0">
+                    </div>
+                    <input id="fourth-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
                 </div>
-                <div class="col-4" id="fourth-part-def">
-                    <input type="text" class="form-control mt-1" id="word3-def0">
-                </div>
-                <div class="col-3" id="fourth-part-type">
-                    <input type="text" class="form-control mt-1" id="word3-type0">
-                </div>
-                <input id="fourth-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
+                                                    <!-- Fourth word's area ends -->
         </form>
     </div>
 
