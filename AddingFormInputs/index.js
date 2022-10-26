@@ -30,16 +30,15 @@ $("document").ready(function () {
         let defId = `word${wordOrder}-def${counter}`;
         let typeId = `word${wordOrder}-type${counter}`;
         let appendPart = `#${part}`;
-        
         let row = `
         <div id="${part}-row-${counter}" class="row">
             <div class="offset-3 col-4" id="first-part-def">
-                <input type="text" class="form-control mt-1" id="word${wordOrder}-def${counter}">
+                <input type="text" class="form-control mt-1" id="word${wordOrder}-def${counter}" placeholder="Tanım giriniz...">
             </div>
             <div class="col-3" id="first-part-type">
-                <input type="text" class="form-control mt-1" id="word${wordOrder}-type${counter}">
+                <input type="text" class="form-control mt-1" id="word${wordOrder}-type${counter}" placeholder="Tür giriniz...">
             </div>
-            <button id="${delBtnOrder}" class="btn mt-1" type="button" style="width: 60px; height: 40px;"><img src="/AddingFormInputs/images/icons8-trash-bin-50.png" width="20px" height="20px" alt=""></button>
+            <button id="${delBtnOrder}" class="btn mt-1" type="button" style="width: 60px; height: 40px;"><img src="/AddingFormInputs/images/icons8-trash-bin-50.png" width="25px" height="25px" alt=""></button>
         </div>`
         $(appendPart).append(row);
         $("#"+defId).hide().show("slow");
@@ -49,7 +48,4 @@ $("document").ready(function () {
         });
         $(`#${delBtnOrder}`).hide().slideDown("slow")
     }
-    
 });
-
-//            <input id="${delBtnOrder}" class="btn btn-dark mt-1" type="button" value="SİL" style="width: 60px; height: 40px;">
