@@ -1,13 +1,10 @@
 
 $("document").ready(function () {
-
+        // Animate inputs when page loaded
         $("#first-part").hide().slideDown("slow");
         $("#second-part").hide().slideDown("slow");
         $("#third-part").hide().slideDown("slow");
         $("#fourth-part").hide().slideDown("slow");
-
-
-
     let firstBtnCount = 1;
     let secondBtnCount = 1;
     let thirdBtnCount = 1;
@@ -29,26 +26,30 @@ $("document").ready(function () {
         fourthBtnCount++;
     });
     function addInputs(counter, part, wordOrder) {
-        let delBtnOrder = `${part}-del-btn-${counter}`
-        let defId = `word${wordOrder}-def${counter}`
-        let typeId = `word${wordOrder}-type${counter}`
-        let appendPart = `#${part}`
+        let delBtnOrder = `${part}-del-btn-${counter}`;
+        let defId = `word${wordOrder}-def${counter}`;
+        let typeId = `word${wordOrder}-type${counter}`;
+        let appendPart = `#${part}`;
+        
         let row = `
-        <div class="row">
-            <div class="offset-1 col-2">
-                <span class="bg-secondary float-end mt-2"><h3>${counter+1}.</h3></span>
-            </div>
-            <div class="col-4" id="first-part-def">
+        <div id="${part}-row-${counter}" class="row">
+            <div class="offset-3 col-4" id="first-part-def">
                 <input type="text" class="form-control mt-1" id="word${wordOrder}-def${counter}">
             </div>
             <div class="col-3" id="first-part-type">
                 <input type="text" class="form-control mt-1" id="word${wordOrder}-type${counter}">
             </div>
-            <input id="${delBtnOrder}" class="btn btn-dark mt-1" type="button" value="X" style="width: 40px; height: 40px;">
+            <button id="${delBtnOrder}" class="btn mt-1" type="button" style="width: 60px; height: 40px;"><img src="/AddingFormInputs/images/icons8-trash-bin-50.png" width="20px" height="20px" alt=""></button>
         </div>`
         $(appendPart).append(row);
         $("#"+defId).hide().show("slow");
         $("#"+typeId).hide().show("slow");
+        $(`#${delBtnOrder}`).on("click", function() {
+            $(`#${part}-row-${counter}`).slideUp("slow").empty();
+        });
         $(`#${delBtnOrder}`).hide().slideDown("slow")
     }
+    
 });
+
+//            <input id="${delBtnOrder}" class="btn btn-dark mt-1" type="button" value="SİL" style="width: 60px; height: 40px;">
